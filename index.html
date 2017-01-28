@@ -8,6 +8,13 @@
         <link rel="stylesheet" href="css/uikit.min.css" />
         <script src="js/jquery.js"></script>
         <script src="js/uikit.min.js"></script>
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@nogizaka46cheer">
+        <meta name="twitter:creator" content="@nogizaka46cheer">
+        <meta name="twitter:title" content="若様Bot">
+        <meta name="twitter:description" content="乃木坂46の若月佑美さんこと若様の人工知能とLINEで会話ができる非公式Botです。">
+        <meta name="twitter:image" content="./images/wakasamabot/wakasamabotcard.png">
         
         <!--
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.6/css/uikit.css" />
@@ -20,10 +27,22 @@
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
                         <li class="uk-active">
-                            <a href="#">hoge</a>
+                            <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">next</a>
+                            <a href="#demo">デモ</a>
+                        </li>
+                        <li>
+                            <a href="#conversation">会話サンプル</a>
+                        </li>
+                        <li>
+                            <a href="#abbr">対応略語の例</a>
+                        </li>
+                        <li>
+                            <a href="#attention">利用上の注意</a>
+                        </li>
+                        <li>
+                            <a href="#ask">お問合せ</a>
                         </li>
                     </ul>
                 </div>
@@ -37,16 +56,16 @@
                 <div class="uk-container uk-container-small">
                     <article class="uk-article">
                         <h1 class="uk-article-title">若様Bot</h>
-                        <p class="uk-article-meta">乃木坂46の若月佑美さんのこと若様の人工知能とLINEで会話ができる非公式Botです。</p>
-                        <p class="uk-text-lead">若月佑美さんの魅力をもっともっと知って欲しい！という想いから作りました。</p>
+                        <p class="uk-article-meta">若月佑美さんの魅力をもっともっと知って欲しい！世の中に広めたい！という想いから作りました。</p>
+                        <p class="uk-text-lead">乃木坂46の若月佑美さんこと若様の人工知能とLINEで会話ができる非公式Bot</p>
                     </article>
 
                     <div class="uk-grid-match uk-child-width-1-2@m uk-grid" uk-grid>
                         <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <p>「こんにちわ」と話しかけると「こんにちわかつき～」と返してくれたり、「若様」と話かければ若月さんのブログなどの情報リンクを返してくれます。</p>
                         </div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <p>若月さんがアシスタントを務めるラジオ「エバンジェリストスクール」の名物コーナー「略語」への返しなどしてくれます！</p>
                         </div>
                     </div>
                 </div>
@@ -65,13 +84,13 @@
                         </div>
                         <div class="uk-card-media-top">
                             <div class="uk-animation-toggle">
-                                <img src="./images/wakasamabot/wakasamabotqr.png" width="300" height="300" alt=""
+                                <img src="./images/wakasamabot/wakasamabotqr.png" width="300" height="300" alt="LINEの友だち追加用QR Code"
                                  class="uk-animation-scale-up uk-transform-origin-bottom-center uk-align-center">
                             </div>
                         </div>
                         <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Top</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <h3 class="uk-card-title">How to use</h3>
+                            <p>スマホのLINEアプリからQRコード読み取りを起動して、こちらのQRコードを写してください。若様Botを友だち追加できます。</p>
                         </div>
 
                     </div>
@@ -86,77 +105,110 @@
                         </div>
                         <div class="uk-card-media-top">
                             <div class="uk-animation-toggle">
-                                <img src="./images/wakasamabot/wakasama.jpg" width="300" height="300" alt=""
+                                <img src="./images/wakasamabot/wakasama.jpg" width="300" height="300" alt="若月 佑美"
                                  class="uk-animation-scale-up uk-transform-origin-bottom-center uk-border-circle uk-align-center">
                             </div>
                         </div>
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">若月 佑美</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>女性アイドルグループ乃木坂46のメンバー。静岡県出身のO型。女優としてドラマや舞台、最近ではラジオまで幅広く活躍している。</p>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default">
+                    <div class="uk-card">
                         <div class="uk-card-header">
                             <div class="uk-card-badge uk-label">LINE</div>
                             <div class="uk-width-expand">
-                                <h3 class="uk-card-title">QR Code</h3>
+                                <h3 class="uk-card-title">Friends</h3>
                             </div>
                         </div>
                         <div class="uk-card-media-top">
                             <div class="uk-animation-toggle">
-                                 <a href="https://line.me/R/ti/p/%40zxp7530n"><img height="36" border="0" alt="友だち追加" class="uk-align-center" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
+                                 <a href="https://line.me/R/ti/p/%40zxp7530n"><img height="36" border="0" alt="LINEの友だち追加"
+                                  class="uk-align-center" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
                             </div>
                         </div>
                         <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Top</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <h3 class="uk-card-title">Hot to use</h3>
+                            <p>スマホのブラウザでこちらのボタンを押してLINEを起動してください。若様Botを友だち追加できます。</p>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-            <h1 class="uk-heading-line uk-text-center"><span>Movie</span></h1> <!-- 若様Bot -->
+            <h1 id="demo" class="uk-heading-line uk-text-center"><span>デモ</span></h1>
 
-            <div class="uk-cover-container uk-height-medium">
-                <video uk-cover>
-                    <source src="https://youtu.be/O1qtPY-CFPw" type="video/mp4">
+            <div class="uk-cover-container uk-height-large">
+                <video uk-cover autoplay loop>
+                    <source src="./images/wakasamabot/WakasamaBotMovie.mp4" type="video/mp4">
                 </video>
             </div>
 
-            
+            <h1 id="conversation" class="uk-heading-line uk-text-center"><span>会話サンプル</span></h1>
 
-            
-        </div>
+            <table class="uk-table uk-table-small">
+                <thead>
+                    <tr>
+                        <th>キーワード</th>
+                        <th>返信</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>こんにちは</td>
+                        <td>こんにちわかつき～</td>
+                    </tr>
+                    <tr>
+                        <td>こんばんは</td>
+                        <td>こんにちわかつき～</td>
+                    </tr>
+                    <tr>
+                        <td>若様</td>
+                        <td>※若月佑美さんのブログなどのリンク情報を返します※</td>
+                    </tr>
+                    <tr>
+                        <td>誕生日</td>
+                        <td>※実際にお試しください！※</td>
+                    </tr>
+                    <tr>
+                        <td>血液型</td>
+                        <td>※実際にお試しください！※</td>
+                    </tr>
+                    <tr>
+                        <td>「写真」や「画像」を含む言葉</td>
+                        <td>※ランダムに写真が返ってきます。※</td>
+                    </tr>
+                    <tr>
+                        <td>「箸（はし）」「はしくん」を含む言葉</td>
+                        <td>※ランダムに写真が返ってきます。今のところ残念ながら精度悪いです。※</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <a href="" uk-totop></a>
-<!--
-        <div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
+            <h1 id="abbr" class="uk-heading-line uk-text-center"><span>対応略語の例</span></h1>
 
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Wakatsuki Yumi</h3>
-                        <p>若月佑美さんは乃木坂46のうんたらかんたらでエバスクうんたらかんたらaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Wakatsuki Yumi</h3>
-                        <p>若月佑美さんは乃木坂46のうんたらかんたらでエバスクうんたらかんたらaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    </div>
-                    <div class="uk-card-media-bottom">
+            ※現状エバンジェリストスクールで出てきたすべての略語には対応できていません。
 
-                    </div>
-                </div>
-            </div>
-        </div>
--->       
+            <ul class="uk-list uk-list-bullet">
+                <li>PC</li>
+                <li>CD</li>
+                <li>OS</li>
+                <li>USB</li>
+                <li>IBM</li>
+            </ul>
+
+            などなど…。
+
+            <h1 id="attention" class="uk-heading-line uk-text-center"><span>利用上の注意</span></h1>
+
+            LINE内の会話内容については保存しておりません。
+
+            <h1 id="ask" class="uk-heading-line uk-text-center"><span>お問合せ</span></h1>
+
+            若様Botに関してご意見などございましたら。<a class="uk-link-muted" href="mailto:nogizaka46noginogi@gmail.com">こちら</a>までご連絡ください。
+
+            <div class="uk-height-small" />
+        </div>   
     </body>
 </html>
